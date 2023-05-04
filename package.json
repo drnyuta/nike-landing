@@ -1,0 +1,23 @@
+{
+  "name": "project-from-scratch",
+  "version": "1.0.0",
+  "description": "A landing page for Nike shoes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/hanna_drozhdzh/project-from-scratch.git"
+  },
+  "author": "Hanna Drozhdzh <anna.drozhdzh@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hanna_drozhdzh/project-from-scratch/issues"
+  },
+  "homepage": "https://gitlab.com/hanna_drozhdzh/project-from-scratch#readme",
+  "devDependencies": {
+    "vite": "^4.3.2"
+  }
+}
