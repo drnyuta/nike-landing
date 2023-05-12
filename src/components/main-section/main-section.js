@@ -9,13 +9,13 @@ export function createMain(data) {
 
   const mainContainer = createMainContainer(data);
   main.append(mainContainer);
-   
+
   return main;
 }
 
 export function createMainContainer(data) {
-  const mainContainer = document.createElement('div');
-  mainContainer.className = 'main-container';
+  const mainContainer = document.createElement("div");
+  mainContainer.className = "main-container";
 
   const firstCircle = create1Circle(data);
   mainContainer.append(firstCircle);
@@ -24,14 +24,14 @@ export function createMainContainer(data) {
   mainContainer.append(textContainer);
 
   const secondCircle = create2Circle(data);
-  mainContainer.append(secondCircle); 
+  mainContainer.append(secondCircle);
 
   return mainContainer;
 }
 
 export function create1Circle(data) {
-  const circle = document.createElement('div');
-  circle.className = 'circle1';
+  const circle = document.createElement("div");
+  circle.className = "circle1";
 
   const arrow = createArrow1(data.images);
   circle.append(arrow);
@@ -40,8 +40,8 @@ export function create1Circle(data) {
 }
 
 export function create2Circle(data) {
-  const circle = document.createElement('div');
-  circle.className = 'circle2';
+  const circle = document.createElement("div");
+  circle.className = "circle2";
 
   const arrow = createArrow2(data.images);
   circle.append(arrow);
@@ -57,12 +57,12 @@ export function createHeading(heading) {
 }
 
 export function createTextContainer(data) {
-  const textContainer = document.createElement('div');
-  textContainer.className = 'main-section__text-container';
+  const textContainer = document.createElement("div");
+  textContainer.className = "main-section__text-container";
 
   const photo = createPhoto(data.images);
   textContainer.append(photo);
-  
+
   const title = createHeading(data.heading);
   textContainer.append(title);
 

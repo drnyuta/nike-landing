@@ -7,13 +7,13 @@
 }
 
 .circle2 {
-    border: 1px solid white;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    transform: translate(54%);
-    position: relative;
-  }
+  border: 1px solid white;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transform: translate(54%);
+  position: relative;
+}
 
 .main-container {
   display: flex;
@@ -35,18 +35,18 @@
 }
 
 .main-section__arrow2 {
-    width: 50px;
-    position: absolute;
-    left: 30%;
-    top: 40%;
+  width: 50px;
+  position: absolute;
+  left: 30%;
+  top: 40%;
 }
 
 .main-section__arrow1 {
-    width: 50px;
-    position: absolute;
-    left: 30%;
-    top: 40%;
-    transform: rotate(180deg);
+  width: 50px;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: rotate(180deg);
 }
 
 .main-heading {
@@ -60,18 +60,9 @@
   left: -5%;
 }
 
-/* .main-heading {
-  position: absolute;
-  font-size: 6rem;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: black;
-  color: transparent;
-  z-index: 2;
-} */
-
 .main-heading::before {
   position: absolute;
-  content: 'NIKE CRYPTOKICK';
+  content: "NIKE CRYPTOKICK";
   color: black;
   z-index: -1;
 }

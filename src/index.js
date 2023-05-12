@@ -1,4 +1,11 @@
-import { getNavBarItems, getImages, getHeading, getPrice, getDescription, getButton } from "./api/api";
+import {
+  getNavBarItems,
+  getImages,
+  getHeading,
+  getPrice,
+  getDescription,
+  getButton,
+} from "./api/api";
 import { setupFooter } from "./components/footer/footer";
 import { setupHeader } from "./components/header/header";
 import { setupMain } from "./components/main-section/main-section";

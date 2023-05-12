@@ -1,27 +1,27 @@
 .footer {
-   display: flex;
-   align-items: flex-end;
-   justify-content: space-evenly;
-   margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin: 0;
 }
 
 .footer__price {
-    font-size: 30px;
-    margin: 10px auto;
+  font-size: 30px;
+  margin: 10px auto;
 }
 
 .footer__description {
-    width: 340px;
-    font-weight: 300;
-    margin: 10px auto 0;
-    line-height: 20px;
+  width: 340px;
+  font-weight: 300;
+  margin: 10px auto 0;
+  line-height: 20px;
 }
 
 .footer__CTA-button {
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
-    color: white;
-    padding: 0;
-    border-bottom: 1px solid white;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: white;
+  padding: 0;
+  border-bottom: 1px solid white;
 }

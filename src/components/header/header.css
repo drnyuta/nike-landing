@@ -1,25 +1,25 @@
 .header__menu__item:not(:last-of-type) {
-   padding-right: 20px;
-   font-weight: 300;
+  padding-right: 20px;
+  font-weight: 300;
 }
 
 .header__menu {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .header__logo {
-    height: 90px;
-    width: 90px;
+  height: 90px;
+  width: 90px;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__icon:not(:last-of-type) {
-    padding-right: 20px;
-    height: 20px;
+  padding-right: 20px;
+  height: 20px;
 }

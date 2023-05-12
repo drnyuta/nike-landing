@@ -1,86 +1,85 @@
 export function setupFooter(parent, data) {
-    const footer = createFooter(data);
-    parent.append(footer);
-  }
-  
-  export function createFooter(data) {
-    const footer = document.createElement("footer");
-    footer.className = "footer";
+  const footer = createFooter(data);
+  parent.append(footer);
+}
 
-    const footerTextWrapper = createFooterWrapper(data);
-    footer.append(footerTextWrapper);
-    
-    const ctaButton = createCtaButton(data.button);
-    footer.append(ctaButton);
+export function createFooter(data) {
+  const footer = document.createElement("footer");
+  footer.className = "footer";
 
-    return footer;
-  }
+  const footerTextWrapper = createFooterWrapper(data);
+  footer.append(footerTextWrapper);
 
-  export function createFooterWrapper(data) {
-    const footerTextWrapper = document.createElement("div");
-    footerTextWrapper.className = "footer__text-wrapper";
-     
-    const price = createPrice(data.price);
-    footerTextWrapper.append(price);
+  const ctaButton = createCtaButton(data.button);
+  footer.append(ctaButton);
 
-    const starIcon1 = createStarIcon(data.images);
-    footerTextWrapper.append(starIcon1);
-    
-    const starIcon2 = createStarIcon(data.images);
-    footerTextWrapper.append(starIcon2);
+  return footer;
+}
 
-    const starIcon3 = createStarIcon(data.images);
-    footerTextWrapper.append(starIcon3);
+export function createFooterWrapper(data) {
+  const footerTextWrapper = document.createElement("div");
+  footerTextWrapper.className = "footer__text-wrapper";
 
-    const starIcon4 = createStarIcon(data.images);
-    footerTextWrapper.append(starIcon4);
+  const price = createPrice(data.price);
+  footerTextWrapper.append(price);
 
-    const starIcon5 = createEmptyStarIcon(data.images);
-    footerTextWrapper.append(starIcon5);
+  const starIcon1 = createStarIcon(data.images);
+  footerTextWrapper.append(starIcon1);
 
-    const description = createDescription(data.description);
-    footerTextWrapper.append(description);
+  const starIcon2 = createStarIcon(data.images);
+  footerTextWrapper.append(starIcon2);
 
+  const starIcon3 = createStarIcon(data.images);
+  footerTextWrapper.append(starIcon3);
 
-    return footerTextWrapper;
-  }
+  const starIcon4 = createStarIcon(data.images);
+  footerTextWrapper.append(starIcon4);
 
-  export function createPrice(price) {
-    const num = document.createElement("p");
-    num.className = "footer__price";
-    num.innerHTML = price.price;
+  const starIcon5 = createEmptyStarIcon(data.images);
+  footerTextWrapper.append(starIcon5);
 
-    return num;
-  }
+  const description = createDescription(data.description);
+  footerTextWrapper.append(description);
 
-  export function createStarIcon(images) {
-    const starIcon = document.createElement("img");
-    starIcon.className = "footer__star-icon";
-    starIcon.src = images[5].star;
+  return footerTextWrapper;
+}
 
-    return starIcon;
-  }
+export function createPrice(price) {
+  const num = document.createElement("p");
+  num.className = "footer__price";
+  num.innerHTML = price.price;
 
-  export function createEmptyStarIcon(images) {
-    const starIcon = document.createElement("img");
-    starIcon.className = "footer__star-icon";
-    starIcon.src = images[6].emptyStar;
+  return num;
+}
 
-    return starIcon;
-  }
+export function createStarIcon(images) {
+  const starIcon = document.createElement("img");
+  starIcon.className = "footer__star-icon";
+  starIcon.src = images[5].star;
 
-  export function createDescription(description) {
-    const desc = document.createElement("p");
-    desc.className = "footer__description";
-    desc.innerHTML = description.title;
+  return starIcon;
+}
 
-    return desc;
-  }
+export function createEmptyStarIcon(images) {
+  const starIcon = document.createElement("img");
+  starIcon.className = "footer__star-icon";
+  starIcon.src = images[6].emptyStar;
 
-  export function createCtaButton(button) {
-    const cta = document.createElement("button");
-    cta.className = "footer__CTA-button";
-    cta.innerHTML = button.CTA;
+  return starIcon;
+}
 
-    return cta;
-  }
+export function createDescription(description) {
+  const desc = document.createElement("p");
+  desc.className = "footer__description";
+  desc.innerHTML = description.title;
+
+  return desc;
+}
+
+export function createCtaButton(button) {
+  const cta = document.createElement("button");
+  cta.className = "footer__CTA-button";
+  cta.innerHTML = button.CTA;
+
+  return cta;
+}

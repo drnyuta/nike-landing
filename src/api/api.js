@@ -77,5 +77,3 @@ export function getPrice() {
 export function getHeading() {
   return { ...heading };
 }
-
-console.log(description.description)
