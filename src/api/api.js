@@ -24,7 +24,7 @@ const images = [
     facebook: "./assets/facebook.svg",
   },
   {
-    shoes: "./assets/shoes-img.svg",
+    shoes: "./assets/shoes-image.png",
   },
   {
     star: "./assets/star.svg",
@@ -38,7 +38,7 @@ const images = [
 ];
 
 const description = {
-  description:
+  title:
     "A Woocommerce product gallery Slider for Slider Revolution with mind-blowing visuals.",
 };
 
@@ -67,7 +67,7 @@ export function getDescription() {
 }
 
 export function getButton() {
-  return { ...CTA };
+  return { ...button };
 }
 
 export function getPrice() {
@@ -75,5 +75,7 @@ export function getPrice() {
 }
 
 export function getHeading() {
-  return { ...title };
+  return { ...heading };
 }
+
+console.log(description.description)

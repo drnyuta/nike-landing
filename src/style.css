@@ -1,12 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;800&display=swap");
 @import url("./components/header/header.css");
+@import url("./components/main-section/main-section.css");
+@import url("./components/footer/footer.css");
 
 :root {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   background: linear-gradient(72.44deg, #432093 0%, #90dafd 100%);
   background-repeat: no-repeat;
   height: 100vh;
   font-family: "Space Grotesk", sans-serif;
-  padding: 1% 3%;
+  padding: 1% 3% 1%;
+  overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
