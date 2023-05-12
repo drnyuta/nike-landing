@@ -1,3 +1,5 @@
+import "./header.css";
+
 export function setupHeader(parent, data) {
   const header = createHeader(data);
   parent.append(header);

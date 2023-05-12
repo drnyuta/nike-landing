@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;800&display=swap");
-@import url("./components/header/header.css");
-@import url("./components/main-section/main-section.css");
-@import url("./components/footer/footer.css");
 
 :root {
   color: white;

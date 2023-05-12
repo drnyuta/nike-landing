@@ -1,3 +1,5 @@
+import "./footer.css";
+
 export function setupFooter(parent, data) {
   const footer = createFooter(data);
   parent.append(footer);

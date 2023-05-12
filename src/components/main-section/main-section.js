@@ -1,3 +1,5 @@
+import "./main-section.css";
+
 export function setupMain(parent, data) {
   const main = createMain(data);
   parent.append(main);
