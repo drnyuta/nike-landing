@@ -1,4 +1,4 @@
-.circle1 {
+.left-circle {
   border: 1px solid white;
   height: 150px;
   width: 150px;
@@ -6,7 +6,7 @@
   transform: translate(-54%);
 }
 
-.circle2 {
+.right-circle {
   border: 1px solid white;
   height: 150px;
   width: 150px;
@@ -34,14 +34,14 @@
   align-items: center;
 }
 
-.main-section__arrow2 {
+.main-section__arrow-right {
   width: 50px;
   position: absolute;
   left: 30%;
   top: 40%;
 }
 
-.main-section__arrow1 {
+.main-section__arrow-left {
   width: 50px;
   position: absolute;
   left: 30%;

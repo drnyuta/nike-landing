@@ -19,31 +19,30 @@ export function createMainContainer(data) {
   const mainContainer = document.createElement("div");
   mainContainer.className = "main-container";
 
-  const firstCircle = create1Circle(data);
-  mainContainer.append(firstCircle);
-
+  const leftCircle = createLeftCircle(data);
+  
   const textContainer = createTextContainer(data);
-  mainContainer.append(textContainer);
 
-  const secondCircle = create2Circle(data);
-  mainContainer.append(secondCircle);
+  const rightCircle = createRightCircle(data);
+
+  mainContainer.append(leftCircle, textContainer, rightCircle);
 
   return mainContainer;
 }
 
-export function create1Circle(data) {
+export function createLeftCircle(data) {
   const circle = document.createElement("div");
-  circle.className = "circle1";
+  circle.className = "left-circle";
 
-  const arrow = createArrow1(data.images);
+  const arrow = createArrowLeft(data.images);
   circle.append(arrow);
 
   return circle;
 }
 
-export function create2Circle(data) {
+export function createRightCircle(data) {
   const circle = document.createElement("div");
-  circle.className = "circle2";
+  circle.className = "right-circle";
 
   const arrow = createArrow2(data.images);
   circle.append(arrow);
@@ -63,31 +62,31 @@ export function createTextContainer(data) {
   textContainer.className = "main-section__text-container";
 
   const photo = createPhoto(data.images);
-  textContainer.append(photo);
 
   const title = createHeading(data.heading);
-  textContainer.append(title);
+
+  textContainer.append(photo, title);
 
   return textContainer;
 }
 
 export function createPhoto(images) {
   const photo = document.createElement("img");
-  photo.src = images[4].shoes;
+  photo.setAttribute('src', images[4].shoes);
   photo.className = "shoes-image";
   return photo;
 }
 
 export function createArrow2(images) {
   const arrow = document.createElement("img");
-  arrow.src = images[7].arrow;
-  arrow.className = "main-section__arrow2";
+  arrow.setAttribute('src', images[7].arrow);
+  arrow.className = "main-section__arrow-right";
   return arrow;
 }
 
-export function createArrow1(images) {
+export function createArrowLeft(images) {
   const arrow = document.createElement("img");
-  arrow.src = images[7].arrow;
-  arrow.className = "main-section__arrow1";
+  arrow.setAttribute('src', images[7].arrow);
+  arrow.className = "main-section__arrow-left";
   return arrow;
 }

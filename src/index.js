@@ -5,6 +5,7 @@ import {
   getPrice,
   getDescription,
   getButton,
+  getCart,
 } from "./api/api";
 import { setupFooter } from "./components/footer/footer";
 import { setupHeader } from "./components/header/header";
@@ -14,6 +15,7 @@ import "./style.css";
 setupHeader(document.getElementById("app"), {
   navBarItems: getNavBarItems(),
   images: getImages(),
+  cart: getCart(),
 });
 
 setupMain(document.getElementById("app"), {

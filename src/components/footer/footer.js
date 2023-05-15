@@ -10,10 +10,10 @@ export function createFooter(data) {
   footer.className = "footer";
 
   const footerTextWrapper = createFooterWrapper(data);
-  footer.append(footerTextWrapper);
 
   const ctaButton = createCtaButton(data.button);
-  footer.append(ctaButton);
+
+  footer.append(footerTextWrapper, ctaButton);
 
   return footer;
 }
@@ -25,22 +25,16 @@ export function createFooterWrapper(data) {
   const price = createPrice(data.price);
   footerTextWrapper.append(price);
 
-  const starIcon1 = createStarIcon(data.images);
-  footerTextWrapper.append(starIcon1);
+  for(let i = 0; i < 4; i++) {
+    const starIcon = createStarIcon(data.images);
+    footerTextWrapper.append(starIcon);
+  }
 
-  const starIcon2 = createStarIcon(data.images);
-  footerTextWrapper.append(starIcon2);
-
-  const starIcon3 = createStarIcon(data.images);
-  footerTextWrapper.append(starIcon3);
-
-  const starIcon4 = createStarIcon(data.images);
-  footerTextWrapper.append(starIcon4);
-
-  const starIcon5 = createEmptyStarIcon(data.images);
-  footerTextWrapper.append(starIcon5);
-
+  const emptyStar = createEmptyStarIcon(data.images);
+  footerTextWrapper.append(emptyStar);
+  
   const description = createDescription(data.description);
+
   footerTextWrapper.append(description);
 
   return footerTextWrapper;
@@ -57,7 +51,7 @@ export function createPrice(price) {
 export function createStarIcon(images) {
   const starIcon = document.createElement("img");
   starIcon.className = "footer__star-icon";
-  starIcon.src = images[5].star;
+  starIcon.setAttribute('src', images[5].star);
 
   return starIcon;
 }
@@ -65,7 +59,7 @@ export function createStarIcon(images) {
 export function createEmptyStarIcon(images) {
   const starIcon = document.createElement("img");
   starIcon.className = "footer__star-icon";
-  starIcon.src = images[6].emptyStar;
+  starIcon.setAttribute('src', images[6].emptyStar);
 
   return starIcon;
 }

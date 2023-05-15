@@ -54,6 +54,10 @@ const heading = {
   title: "NIKE CRYPTOKICK",
 };
 
+const cart = {
+  items: "0",
+};
+
 export function getNavBarItems() {
   return [...navBarItems];
 }
@@ -77,3 +81,8 @@ export function getPrice() {
 export function getHeading() {
   return { ...heading };
 }
+
+export function getCart() {
+  return { ...cart };
+}
+console.log(cart.items)

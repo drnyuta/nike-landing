@@ -10,23 +10,21 @@ export function createHeader(data) {
   header.className = "header";
 
   const logo = createLogo(data.images);
-  header.append(logo);
 
   const nav = createNav(data.navBarItems);
-  header.append(nav);
 
   const headerIconsWrapper = createHeaderIconsWrapper(data);
-  header.append(headerIconsWrapper);
 
-  const cart = createCart();
-  header.append(cart);
+  const cart = createCart(data.cart);
+  
+  header.append(logo, nav, headerIconsWrapper, cart);
 
   return header;
 }
 
 export function createLogo(images) {
   const logo = document.createElement("img");
-  logo.src = images[0].logo;
+  logo.setAttribute('src', images[0].logo);
   logo.className = "header__logo";
   return logo;
 }
@@ -54,41 +52,40 @@ export function createHeaderIconsWrapper(data) {
   headerIconsWrapper.className = "header__icons-wrapper";
 
   const twitter = createTwitterIcon(data.images);
-  headerIconsWrapper.append(twitter);
 
   const insta = createInstaIcon(data.images);
-  headerIconsWrapper.append(insta);
 
   const facebook = createFacebookIcon(data.images);
-  headerIconsWrapper.append(facebook);
+
+  headerIconsWrapper.append(twitter, insta, facebook);
 
   return headerIconsWrapper;
 }
 
 export function createTwitterIcon(images) {
   const twitter = document.createElement("img");
-  twitter.src = images[1].twitter;
+  twitter.setAttribute('src', images[1].twitter);
   twitter.className = "header__icon";
   return twitter;
 }
 
 export function createInstaIcon(images) {
   const insta = document.createElement("img");
-  insta.src = images[2].insta;
+  insta.setAttribute('src', images[2].insta);
   insta.className = "header__icon";
   return insta;
 }
 
 export function createFacebookIcon(images) {
   const facebook = document.createElement("img");
-  facebook.src = images[3].facebook;
+  facebook.setAttribute('src',images[3].facebook);
   facebook.className = "header__icon";
   return facebook;
 }
 
-export function createCart() {
-  const cart = document.createElement("p");
-  cart.innerHTML = "CART(0)";
-  cart.className = "cart";
-  return cart;
+export function createCart(cart) {
+  const cartItem = document.createElement("p");
+  cartItem.innerHTML = `CART(${cart.items})`;
+  cartItem.className = "cart";
+  return cartItem;
 }
