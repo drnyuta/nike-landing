@@ -12,28 +12,28 @@ const navBarItems = [
 
 const images = [
   {
-    logo: "./assets/logo.svg",
+    logo: "./logo.svg",
   },
   {
-    twitter: "./assets/twitter.svg",
+    twitter: "./twitter.svg",
   },
   {
-    insta: "./assets/instagram.svg",
+    insta: "./instagram.svg",
   },
   {
-    facebook: "./assets/facebook.svg",
+    facebook: "./facebook.svg",
   },
   {
-    shoes: "./assets/shoes-image.png",
+    shoes: "./shoes-image.png",
   },
   {
-    star: "./assets/star.svg",
+    star: "./star.svg",
   },
   {
-    emptyStar: "./assets/empty-star.svg",
+    emptyStar: "./empty-star.svg",
   },
   {
-    arrow: "./assets/arrow.svg",
+    arrow: "./arrow.svg",
   },
 ];
 

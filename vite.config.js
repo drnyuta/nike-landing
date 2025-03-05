@@ -1,3 +1,7 @@
 export default {
-    publicDir: 'assets',
-}
+  publicDir: "assets",
+  build: {
+    outDir: "dist",
+    assetsDir: 'assets',
+  },
+};
